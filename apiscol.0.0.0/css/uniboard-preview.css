@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+.ubz-preview,.accordion-wrapper {
+	overflow: hidden;
+}
+div.preview-area div.ubz-preview.ui-widget-content {
+	font-size: 0.9em;
+}
+
+.ubz-preview .learner,.ubz-preview .teacher {
+	padding: 3px;
+	margin-top: 5px;
+}
+
+.ubz-preview div.accordion-wrapper div.left-col div.slides-accordion div.ui-accordion-content , .ubz-preview .slides-accordion.ui-accordion.ui-widget h1{
+	font-size: 0.9em;
+} 
+
+
+.ubz-preview div.right-col div.slides-views div.view img {
+	width: 100%
+}
+
+.ubz-preview div.right-col div.slides-views {
+	position: relative;
+}
+
+.ubz-preview .accordion-wrapper {
+	width: 44%;
+	overflow-y: auto;
+	float: left;
+}
+
+.ubz-preview .left-col {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.ubz-preview .right-col {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 52%;
+	margin-left: 3%;
+}
+
+.ubz-preview .ui-accordion-header a {
+	outline: none;
+}
+
+.ubz-preview div.right-col div.slides-views div.view div.actions-container img
+	{
+	width: 24px;
+	cursor: pointer;
+	margin-left: 0.5em;
+}

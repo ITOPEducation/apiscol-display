@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.apiscol-notice .video-preview {
+	-webkit-box-shadow: 0 0 20px #000;
+	-moz-box-shadow: 0 0 20px #000;
+	width: 650px;
+	height: 300px;
+	overflow: none;
+	margin: 5% auto;
+}

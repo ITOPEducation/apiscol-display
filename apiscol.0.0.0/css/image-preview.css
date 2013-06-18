@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+div.image-preview img {
+	display: block;
+}

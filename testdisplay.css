@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+}
+select {
+	margin-bottom: 50px;
+}
+
+.container {
+	margin: 0px auto;
+	width:800px;
+	background-color: white;
+	padding:20px;
+	height: 1000px;
+}
+.container>select {
+	vertical-align: top;
+}
+.apiscol {
+	clear: left;
+}
+html body div.container select#mdid {
+	width: 450px;
+}
+html body div.container select {
+	height: 150px;
+}
+html body div.container img.logo{
+	width: 64px;
+	float: left;
+	margin-right: 2em;
+}
+html body div.container header.test-ui img.bandeau {
+	margin-bottom: 1em;
+}

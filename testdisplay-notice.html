@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Apiscol - Fiche ressource</title>
+<link rel="stylesheet" href="testdisplay.css">
+</head>
+<body>
+	
+	<div class="container">
+	<header class="test-ui ui-helper-clearfix">
+		<img style="vertical-align: bottom;" src="img/bandeau.png"
+			class="bandeau" />
+
+	</header>
+		<img style="vertical-align: bottom;" src="img/logo-api.png"
+			class="logo" /><select id="roller" multiple="multiple">
+			<option value="black-tie">Black-tie</option>
+			<option value="dark-hive">Dark hive</option> base
+			</option>
+			<option value="black-tie">black-tie</option>
+			<option value="blitzer">blitzer</option>
+			<option value="cupertino">cupertino</option>
+			<option value="dot-luv">dot-luv</option>
+			<option value="excite-bike">excite-bike</option>
+			<option value="hot-sneaks">hot-sneaks</option>
+			<option value="humanity">humanity</option>
+			<option value="mint-choc">mint-choc</option>
+			<option value="redmond">redmond</option>
+			<option value="smoothness">smoothness</option>
+			<option value="south-street" selected="selected">south-street</option>
+			<option value="start">start</option>
+			<option value="swanky-purse">swanky-purse</option>
+			<option value="trontastic">trontastic</option>
+			<option value="ui-darkness">ui-darkness</option>
+			<option value="ui-lightness">ui-lightness</option>
+			<option value="vader">vader</option>
+		</select> <select id="mdid" multiple="multiple"></select> <span
+			class="mini-selector-container"> <input type="checkbox"
+			id="mini" /><label for="mini">Mini-notice</label>
+		</span>
+		<div>
+			<a id="notice" data-mode="full" data-style="south-street"></a>
+		</div>
+
+	</div>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+	<script type="text/javascript"
+		src="http://apiscol.crdp-versailles.fr/cdn/0.0.1/js/jquery.apiscol.js"></script>
+
+	<script type="text/javascript">
+		var host = "http://localhost:8080";
+		var metaUrl = host + "/meta";
+		var resourceNotice;
+		$(document).ready(function() {
+			$("#roller").bind("change", handleStyleSelection);
+			$("#mdid").bind("change", handleMetadataSelection);
+			$("#mini").bind("click", handleModeSwitch);
+			$.ajax({
+				type : "GET",
+				url : metaUrl + "?start=0&rows=50&desc=true",
+				headers : {
+					accept : "application/atom+xml"
+				},
+				error : function(msg) {
+					console.log(msg);
+				},
+				success : function(result) {
+					refreshMetadataList(result);
+				}
+			});
+		});
+
+		function refreshMetadataList(xmlData) {
+			$("#mdid").empty();
+			$(xmlData).find("entry").each(
+
+					function(index, elem) {
+						var title = $(elem).find("atom\\:title").text();
+						if (!title)
+							title = $(elem).find("title").text();
+						var url = $(elem).find("atom\\:link[type='text/html']")
+								.attr("href");
+						if (!url)
+							url = ($(elem).find("link[type='text/html']"))
+									.attr("href");
+						addItemToMetadata(title, url);
+					});
+		}
+		function addItemToMetadata(title, url) {
+			var $option = $(document.createElement("option"));
+			$option.attr("id", url);
+			$option.text(title);
+			$("#mdid").append($option);
+		}
+		function handleStyleSelection() {
+			if (resourceNotice)
+				resourceNotice.apiscol('option', 'style', getStyle());
+		}
+		function handleMetadataSelection(event) {
+			var url = getUrl();
+			if (resourceNotice)
+				resourceNotice.apiscol('option', 'url', url);
+			else
+				loadNotice(url);
+		}
+		function handleModeSwitch() {
+			if (resourceNotice)
+				$("#notice").apiscol('option', 'mode', getMode());
+		}
+		function loadNotice() {
+			if (!getUrl() || getUrl().match(/^\s*$/))
+				return;
+			resourceNotice = $("#notice").apiscol({
+				"url" : getUrl()
+			});
+		}
+		function getMode() {
+			return $("#mini").is(':checked') ? "base" : "full";
+		}
+		function getUrl() {
+			return $("#mdid option:selected").attr("id").replace("full",
+					getMode());
+		}
+		function getStyle() {
+			return $("#roller").val()[0];
+		}
+	</script>
+
+</body>
+</html>

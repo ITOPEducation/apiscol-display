@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+div.apiscol-notice.apiscol-base {
+	padding: 0.5em;
+}
+
+.apiscol-notice.apiscol-base.apiscol-condensed header a.download,div.apiscol-notice.apiscol-base.apiscol-condensed header section.icon-container,div.apiscol-notice.apiscol-base.apiscol-condensed span.desc-container
+	{
+	visibility: hidden;
+}
+
+div.apiscol-notice.apiscol-base.apiscol-condensed {
+	margin: 1px;
+}
+
+div.apiscol-notice.apiscol-base.apiscol-expanded {
+	margin: 0px;
+}
+
+.apiscol-notice.apiscol-base.apiscol-condensed div.thumb {
+	visibility: hidden;
+}
+
+div.apiscol-notice.apiscol-base  span.desc-container {
+	display: block;
+	clear: left;
+	max-height: 2.5em;
+	overflow-y: hidden;
+}
+
+.apiscol-notice.apiscol-base div.thumb,.apiscol-notice.apiscol-base header
+	{
+	display: block;
+	float: left;
+}
+.apiscol-notice.apiscol-base div.thumb
+	{
+	width:17%;
+}
+.apiscol-notice.apiscol-base header
+	{
+	width:78%;
+}
+.apiscol-notice.apiscol-base div.thumb img {
+	width: 100%;
+}
+
+.apiscol-notice.apiscol-base header section.icon-container img {
+	margin-left: 0.2em;
+}
+
+.apiscol-notice.apiscol-base  header section.authors span.authors-wrapper
+	{
+	padding: 0.2em;
+	font-size: 0.8em;
+}
+
+.apiscol-notice.apiscol-base header {
+	margin-left: 1em;
+}
+
+div.apiscol-notice.apiscol-base.apiscol-expanded header a.download {
+	margin-top: 1em;
+	float: right;
+	font-size: 0.8em;
+}
+
+div.apiscol-notice.apiscol-base header section.icon-container {
+	float: left;
+	margin-top: 0.8em;
+}
+
+.apiscol-notice.apiscol-base header h1 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+.apiscol-notice.apiscol-base header section.authors span.authors-wrapper span.vcard
+	{
+	margin-left: 10px;
+}
+
+.apiscol-notice.apiscol-base header section.authors span.authors-wrapper span.vcard+span
+	{
+	margin-left: 5px;
+}
