@@ -3,7 +3,7 @@
 	var pluginName = "apiscol";
 	var defaults = {
 		apiscolDisplayModesPattern : "VERSION/js/jquery-FRAMEWORK.apiscol_mode_MODE.js",
-		cdn : "http://apiscol.crdp-versailles.fr/cdn/",
+		cdn : "http://apiscol.cdn.local/cdn/",
 		waiterPath : "VERSION/img/wait.gif",
 		backgroundColor : "#000",
 		url : "",
