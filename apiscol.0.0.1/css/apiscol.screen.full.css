@@ -360,12 +360,12 @@ div.container div.ui-corner-all {
 
 .apiscol-notice.apiscol-full span.weight {
 	background-image:
-		url(http://apiscol.cdn.local/cdn/icons/st0/technical/size.png);
+		url(https://rawgit.com/ITOPEducation/apiscol-cdn/master/icons/st0/technical/size.png);
 }
 
 .apiscol-notice.apiscol-full .duration span.clock {
 	background-image:
-		url(http://apiscol.cdn.local/cdn/icons/st0/technical/duration/duration.png);
+		url(https://rawgit.com/ITOPEducation/apiscol-cdn/master/icons/st0/technical/duration/duration.png);
 }
 
 .apiscol-notice.apiscol-full header.ui-corner-top span.ui-button {
