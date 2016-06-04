@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+.apiscol-notice  div#presentation section.share-buttons a {
+	border: none;
+	text-decoration: none;
+	display: block;
+	margin-right: 5em;
+	padding: 0.2em;
+}
+ul.ui-autocomplete.ui-front {
+	z-index: 9999 !important;
+}
+
+.apiscol-notice  div#presentation header.ui-helper-reset section.share-buttons ul#share-options.ui-menu
+	{
+	position: absolute;
+}
+
+.apiscol-notice div.main-content div#presentation section.share-buttons img.share-logo
+	{
+	width: 16px;
+	vertical-align: middle;
+	display: block;
+}
+
+.apiscol-notice div.main-content div#presentation section.share-buttons div.ui-buttonset button.ui-button span.ui-button-text
+	{
+	padding: 0.1em;
+	display: none;
+}
+
+.apiscol-notice div.main-content div#presentation section.share-buttons div.ui-buttonset button.ui-button
+	{
+	height: 1.8em;
+	float: left;
+}
+
+div.ui-dialog div.apiscol-snippet div.snippet-options-bar label.ui-button span.ui-button-text
+	{
+	padding: 0.1em;
+}
+
+div.ui-dialog div.apiscol-snippet div.snippet-options-bar label.ui-button.ui-state-disabled span.ui-button-text
+	{
+	cursor: pointer;
+}
+
+.ui-icon-apiscol {
+	background-image: url("../img/logo-api.png") !important;
+	background-image: url("../img/logo-api.png") !important;
+	margin-left: -14px !important;
+	margin-top: -12px !important;
+	height: 25px !important;
+	width: 28px !important;
+}
+
+.ui-icon-jquery {
+	background-image: url("../img/jquery.png") !important;
+}
+
+.ui-icon-iframe {
+	background-image: url("../img/iframe.png") !important;
+}
+
+div.apiscol-snippet div.snippet-options-bar span span.ui-combobox a.ui-button
+	{
+	height: 1.3em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+div.apiscol-snippet div.snippet-options-bar span span.ui-combobox input
+	{
+	height: 1.3em;
+	vertical-align: middle;
+	padding: 0;
+}
+
+div.apiscol-snippet div.snippet-options-bar span span.ui-combobox input
+	{
+	width: 0;
+	border: 0;
+	padding: 0;
+}
+
+div.apiscol-snippet div.snippet-options-bar label.ui-button {
+	width: 1.3em;
+	height: 1.3em;
+	vertical-align: middle;
+	margin-left: 0.3em;
+}
+
+div.apiscol-snippet div.snippet-options-bar>span.snippet-option-displayer
+	{
+	margin-left: 0.3em;
+}
+
+div.apiscol-snippet div.ui-widget-content textarea {
+	width: 99%;
+	font-size: 0.8em;
+	font-family: "Courier New", Courier, monospace;
+	height: 7em;
+}
+
+div.ui-dialog div.apiscol-snippet div.snippet-options-bar {
+	margin-bottom: 0.3em;
+}
+
+ul.ui-autocomplete li.ui-menu-item {
+	font-size: 0.9em;
+}
+
+div.apiscol-snippet div.snippet-options-bar span.snippet-option-displayer
+	{
+	display: inline-block;
+	margin-right: 0;
+	padding: 0.3em;
+	vertical-align: middle;
+	width: 8em;
+	font-size: 0.8em;
+}

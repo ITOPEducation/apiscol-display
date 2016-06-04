@@ -14,7 +14,7 @@
 		device : "screen",
 		UILanguage : "fr",
 		nb_max_authors_displayed : 3,
-		version : "version-token",
+		version : "0.0.1",
 		closeButton : false
 	};
 	var frameworkForDevice = {

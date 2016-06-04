@@ -1,0 +1,376 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("uniboard-preview.css");
+
+@IMPORT url("video-preview.css");
+
+@IMPORT url("pdf-preview.css");
+
+@IMPORT url("image-preview.css");
+
+@IMPORT url("remote-resource-preview.css");
+
+@IMPORT url("apiscol.screen.all.css");
+
+.apiscol-notice.apiscol-full div.main-content div#presentation section.share-buttons div.fb-like
+	{
+	vertical-align: top;
+}
+
+.apiscol-left-col {
+	float: left;
+	width: 100px;
+	border-right: thin solid black;
+}
+
+.apiscol-right-col {
+	float: left;
+	margin-left: 15px;
+}
+
+.apiscol-search {
+	border: thin solid black;
+}
+
+ul.ui-autocomplete li.ui-menu-item {
+	font-size: 0.9em;
+}
+
+.apiscol-notice.apiscol-full>header>h1 {
+	font-size: 1.2em;
+	padding-left: 0.3em;
+	width: 75%;
+	float: left;
+	margin-top: 0;
+	margin-right: 5%;
+}
+
+.apiscol-notice.apiscol-full div.main-content ul.ui-tabs-nav>li:FIRST-CHILD
+	{
+	clear: left;
+}
+
+.apiscol-notice.apiscol-full h2 {
+	font-size: 1em;
+	display: inline-block;
+	background: none;
+	border: none;
+	padding-left: 0.3em;
+}
+
+.apiscol-notice.apiscol-full h2[data-purpose^="educational"],.apiscol-notice.apiscol-full h2[data-purpose^="niveau éducatif"]
+	{
+	font-size: 0.8em;
+}
+
+.apiscol-notice.apiscol-full header {
+	padding: 0.5em;
+}
+
+.apiscol-notice.apiscol-full div#presentation section:.share-buttons,.apiscol-notice.apiscol-full div#presentation section:.icon-container
+	{
+	padding-top: 0em;
+}
+
+.apiscol-notice.apiscol-full div#presentation section {
+	clear: both;
+	position: relative;
+	padding-top: 1em;
+}
+
+.apiscol-notice.apiscol-full div#presentation section.share-buttons {
+	float: right;
+	clear: none;
+}
+
+.apiscol-notice.apiscol-full  span.description {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.apiscol-notice.apiscol-full  span.description span {
+	overflow: auto;
+	display: inline-block;
+}
+
+.apiscol-notice.apiscol-full div#presentation.ui-tabs-panel section.classifications
+	{
+	text-align: center;
+	display: inline-block;
+	float: right;
+	padding: 0.2em;
+	margin: 1em 0em;
+}
+
+.apiscol-notice.apiscol-full  .thumb {
+	display: table-cell;
+	vertical-align: top;
+	margin: 0.3em;
+	padding: 0.3em;
+	margin: 0.3em 1em 0.3em 0;
+	cursor: pointer;
+	float: left;
+}
+
+.apiscol-notice.apiscol-full  .tag {
+	margin: 0.3em 0.3em;
+	padding: 0.3em;
+	font-size: 1em;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.apiscol-notice.apiscol-full div.main-content div#presentation section.authors span.authors-wrapper span+span
+	{
+	margin-left: 2%;
+	font-size: 0.8em;
+}
+
+.apiscol-notice.apiscol-full  .authors-wrapper strong {
+	font-size: 0.8em;
+}
+
+.apiscol-notice.apiscol-full  .authors-wrapper {
+	padding: 0.5em;
+}
+
+.apiscol-notice.apiscol-full  .authors {
+	display: block;
+	margin-top: 1em;
+	word-wrap: break-word;
+}
+
+.apiscol-notice.apiscol-full  #presentation>header {
+	float: left;
+	width: 100%;
+}
+
+.apiscol-notice.apiscol-full header h1 a.download {
+	float: right;
+	margin-top: 0;
+}
+
+.apiscol-notice.apiscol-full  .icon-container {
+	margin-left: 5%;
+	margin-bottom: 0.5em;
+	float: left;
+}
+
+div.container div.ui-corner-all {
+	padding: 0.5em;
+}
+
+.apiscol-notice.apiscol-full  .vcard hr {
+	display: none;
+}
+
+.apiscol-notice.apiscol-full section.icon-container img,.apiscol-notice.apiscol-full div section.summary li img
+	{
+	width: 32px;
+	height: 32px;
+	margin-right: 0.5em;
+}
+
+.apiscol-notice.apiscol-full #presentation div.section.icon-container img
+	{
+	cursor: pointer;
+}
+
+.apiscol-notice.apiscol-full .download-unavailable {
+	padding: 0.3em;
+}
+
+.apiscol-notice.apiscol-full div section.summary li img {
+	vertical-align: middle;
+}
+
+.apiscol-notice.apiscol-full div#educational section.summary li {
+	margin-top: 0.5em;
+}
+
+.apiscol-notice.apiscol-full div section.summary {
+	float: left;
+	width: 40%;
+}
+
+.apiscol-notice.apiscol-full div section.details {
+	float: left;
+	width: 50%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.apiscol-notice.apiscol-full div#presentation.ui-tabs-panel section.level-container span
+	{
+	display: inline-block;
+	margin-top: 0.2em;
+	padding: 0.2em;
+}
+
+.apiscol-notice.apiscol-full div#presentation.ui-tabs-panel section.level-container span+span
+	{
+	margin-left: 1em;
+}
+
+.apiscol-notice.apiscol-full div#educational section.details li.educational-description
+	{
+	list-style: square;
+}
+
+.apiscol-notice.apiscol-full .error-message {
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin: 1em auto;
+	width: 50%;
+	text-align: center;
+}
+
+.apiscol-notice.apiscol-full .ui-button.preview-link .ui-icon {
+	background-image: url(../img/preview.png);
+	width: 32px;
+	height: 27px;
+	margin: -16px -13px;
+}
+
+.apiscol-notice.apiscol-full .preview-area {
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.apiscol-notice.apiscol-full .ui-button.preview-link {
+	outline: 0;
+	background: none;
+	border: none;
+}
+
+.apiscol-notice.apiscol-full div#presentation section.desc-container .thumb a.preview-link
+	{
+	bottom: 2em;
+	left: 1em;
+	position: relative;
+	display: inline-block;
+}
+
+.apiscol-notice.apiscol-full div#presentation section.desc-container span.description a.preview-link
+	{
+	background-position: center center;
+	display: inline-block;
+	height: 2em;
+	float: left;
+}
+
+.apiscol-notice.apiscol-full div#presentation section.preview-container
+	{
+	padding-top: 1em;
+}
+
+.apiscol-notice.apiscol-full div#presentation section.desc-container {
+	display: table;
+}
+
+.apiscol-notice.apiscol-full section.summary ul {
+	list-style: none;
+}
+
+.apiscol-notice.apiscol-full div section.summary,.apiscol-notice.apiscol-full div section.details
+	{
+	height: 95%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.apiscol-notice.apiscol-full div#rights div ul li.role {
+	list-style: none;
+}
+
+.apiscol-notice.apiscol-full div#rights div ul li.role ul {
+	float: left;
+	margin-top: 1em;
+	margin-left: 2em;
+	padding: 0;
+}
+
+.apiscol-notice.apiscol-full div#rights div ul li.role ul li {
+	list-style: none;
+}
+
+.apiscol-notice.apiscol-full div#rights div ul li span.role-label {
+	padding: 0.2em;
+	float: left;
+	clear: left;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.apiscol-notice.apiscol-full div#rights .contributors {
+	float: left;
+	width: 65%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.apiscol-notice.apiscol-full div#rights .licence {
+	float: left;
+	width: 25%;
+	height: 90%;
+	padding: 1em;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.apiscol-notice.apiscol-full div#rights .licence div.copyright img,.apiscol-notice.apiscol-full div#rights .licence div.cost img
+	{
+	margin-right: 1em;
+	vertical-align: middle;
+	width: 1.5em;
+}
+
+.apiscol-notice.apiscol-full div#rights .licence div.cost,.apiscol-notice.apiscol-full div#rights .licence div.rights-description
+	{
+	margin-top: 1em;
+}
+
+.apiscol-notice.apiscol-full div#rights.ui-tabs-panel {
+	padding-right: 0;
+}
+
+.apiscol-notice.apiscol-full div.main-content section.summary span.duration
+	{
+	position: absolute;
+	bottom: 1em;
+	padding: 10px;
+}
+
+.apiscol-notice.apiscol-full div.main-content section.summary span.size
+	{
+	position: absolute;
+	bottom: 4.5em;
+	padding: 10px;
+}
+
+.apiscol-notice.apiscol-full .duration span.clock,.apiscol-notice.apiscol-full span.weight
+	{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+.apiscol-notice.apiscol-full span.weight {
+	background-image:
+		url(http://apiscol.cdn.local/cdn/icons/st0/technical/size.png);
+}
+
+.apiscol-notice.apiscol-full .duration span.clock {
+	background-image:
+		url(http://apiscol.cdn.local/cdn/icons/st0/technical/duration/duration.png);
+}
+
+.apiscol-notice.apiscol-full header.ui-corner-top span.ui-button {
+	height: 1em;
+	margin-left: 1.3em;
+	padding: 0.2em;
+	width: 1em;
+}
